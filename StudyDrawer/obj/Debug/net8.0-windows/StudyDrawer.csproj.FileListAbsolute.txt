@@ -1,0 +1,17 @@
+C:\Users\Egor\source\repos\StudyDrawer\StudyDrawer\bin\Debug\net8.0-windows\StudyDrawer.exe
+C:\Users\Egor\source\repos\StudyDrawer\StudyDrawer\bin\Debug\net8.0-windows\StudyDrawer.deps.json
+C:\Users\Egor\source\repos\StudyDrawer\StudyDrawer\bin\Debug\net8.0-windows\StudyDrawer.runtimeconfig.json
+C:\Users\Egor\source\repos\StudyDrawer\StudyDrawer\bin\Debug\net8.0-windows\StudyDrawer.dll
+C:\Users\Egor\source\repos\StudyDrawer\StudyDrawer\bin\Debug\net8.0-windows\StudyDrawer.pdb
+C:\Users\Egor\source\repos\StudyDrawer\StudyDrawer\obj\Debug\net8.0-windows\StudyDrawer.Form1.resources
+C:\Users\Egor\source\repos\StudyDrawer\StudyDrawer\obj\Debug\net8.0-windows\StudyDrawer.csproj.GenerateResource.cache
+C:\Users\Egor\source\repos\StudyDrawer\StudyDrawer\obj\Debug\net8.0-windows\StudyDrawer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Egor\source\repos\StudyDrawer\StudyDrawer\obj\Debug\net8.0-windows\StudyDrawer.AssemblyInfoInputs.cache
+C:\Users\Egor\source\repos\StudyDrawer\StudyDrawer\obj\Debug\net8.0-windows\StudyDrawer.AssemblyInfo.cs
+C:\Users\Egor\source\repos\StudyDrawer\StudyDrawer\obj\Debug\net8.0-windows\StudyDrawer.csproj.CoreCompileInputs.cache
+C:\Users\Egor\source\repos\StudyDrawer\StudyDrawer\obj\Debug\net8.0-windows\StudyDrawer.dll
+C:\Users\Egor\source\repos\StudyDrawer\StudyDrawer\obj\Debug\net8.0-windows\refint\StudyDrawer.dll
+C:\Users\Egor\source\repos\StudyDrawer\StudyDrawer\obj\Debug\net8.0-windows\StudyDrawer.pdb
+C:\Users\Egor\source\repos\StudyDrawer\StudyDrawer\obj\Debug\net8.0-windows\StudyDrawer.genruntimeconfig.cache
+C:\Users\Egor\source\repos\StudyDrawer\StudyDrawer\obj\Debug\net8.0-windows\ref\StudyDrawer.dll
+C:\Users\Egor\source\repos\StudyDrawer\StudyDrawer\obj\Debug\net8.0-windows\StudyDrawer.Forms.EditImageForm.resources
