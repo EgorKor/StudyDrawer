@@ -3,36 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\Egor\\source\\repos\\StudyDrawer\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7D1A44F3-B45A-4D17-B30D-3AE803B828E5}|StudyDrawer\\StudyDrawer.csproj|c:\\users\\egor\\source\\repos\\studydrawer\\studydrawer\\forms\\editimageform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7D1A44F3-B45A-4D17-B30D-3AE803B828E5}|StudyDrawer\\StudyDrawer.csproj|solutionrelative:studydrawer\\forms\\editimageform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{7D1A44F3-B45A-4D17-B30D-3AE803B828E5}|StudyDrawer\\StudyDrawer.csproj|c:\\users\\egor\\source\\repos\\studydrawer\\studydrawer\\forms\\editimageform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D1A44F3-B45A-4D17-B30D-3AE803B828E5}|StudyDrawer\\StudyDrawer.csproj|solutionrelative:studydrawer\\forms\\editimageform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D1A44F3-B45A-4D17-B30D-3AE803B828E5}|StudyDrawer\\StudyDrawer.csproj|c:\\users\\egor\\source\\repos\\studydrawer\\studydrawer\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D1A44F3-B45A-4D17-B30D-3AE803B828E5}|StudyDrawer\\StudyDrawer.csproj|solutionrelative:studydrawer\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D1A44F3-B45A-4D17-B30D-3AE803B828E5}|StudyDrawer\\StudyDrawer.csproj|c:\\users\\egor\\source\\repos\\studydrawer\\studydrawer\\forms\\grapicsoperation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D1A44F3-B45A-4D17-B30D-3AE803B828E5}|StudyDrawer\\StudyDrawer.csproj|solutionrelative:studydrawer\\forms\\grapicsoperation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7D1A44F3-B45A-4D17-B30D-3AE803B828E5}|StudyDrawer\\StudyDrawer.csproj|c:\\users\\egor\\source\\repos\\studydrawer\\studydrawer\\domaincode\\graphic\\spline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7D1A44F3-B45A-4D17-B30D-3AE803B828E5}|StudyDrawer\\StudyDrawer.csproj|solutionrelative:studydrawer\\domaincode\\graphic\\spline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7D1A44F3-B45A-4D17-B30D-3AE803B828E5}|StudyDrawer\\StudyDrawer.csproj|c:\\users\\egor\\source\\repos\\studydrawer\\studydrawer\\forms\\editimageform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7D1A44F3-B45A-4D17-B30D-3AE803B828E5}|StudyDrawer\\StudyDrawer.csproj|solutionrelative:studydrawer\\forms\\editimageform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7D1A44F3-B45A-4D17-B30D-3AE803B828E5}|StudyDrawer\\StudyDrawer.csproj|c:\\users\\egor\\source\\repos\\studydrawer\\studydrawer\\domaincode\\graphic\\ifigure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7D1A44F3-B45A-4D17-B30D-3AE803B828E5}|StudyDrawer\\StudyDrawer.csproj|solutionrelative:studydrawer\\domaincode\\graphic\\ifigure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7D1A44F3-B45A-4D17-B30D-3AE803B828E5}|StudyDrawer\\StudyDrawer.csproj|c:\\users\\egor\\source\\repos\\studydrawer\\studydrawer\\domaincode\\graphic\\flush.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D1A44F3-B45A-4D17-B30D-3AE803B828E5}|StudyDrawer\\StudyDrawer.csproj|solutionrelative:studydrawer\\domaincode\\graphic\\flush.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7D1A44F3-B45A-4D17-B30D-3AE803B828E5}|StudyDrawer\\StudyDrawer.csproj|c:\\users\\egor\\source\\repos\\studydrawer\\studydrawer\\forms\\editimageform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7D1A44F3-B45A-4D17-B30D-3AE803B828E5}|StudyDrawer\\StudyDrawer.csproj|solutionrelative:studydrawer\\forms\\editimageform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7D1A44F3-B45A-4D17-B30D-3AE803B828E5}|StudyDrawer\\StudyDrawer.csproj|c:\\users\\egor\\source\\repos\\studydrawer\\studydrawer\\domaincode\\graphic\\flush.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7D1A44F3-B45A-4D17-B30D-3AE803B828E5}|StudyDrawer\\StudyDrawer.csproj|solutionrelative:studydrawer\\domaincode\\graphic\\flush.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7D1A44F3-B45A-4D17-B30D-3AE803B828E5}|StudyDrawer\\StudyDrawer.csproj|c:\\users\\egor\\source\\repos\\studydrawer\\studydrawer\\domaincode\\graphic\\ifigure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D1A44F3-B45A-4D17-B30D-3AE803B828E5}|StudyDrawer\\StudyDrawer.csproj|solutionrelative:studydrawer\\domaincode\\graphic\\ifigure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D1A44F3-B45A-4D17-B30D-3AE803B828E5}|StudyDrawer\\StudyDrawer.csproj|c:\\users\\egor\\source\\repos\\studydrawer\\studydrawer\\forms\\editimageform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7D1A44F3-B45A-4D17-B30D-3AE803B828E5}|StudyDrawer\\StudyDrawer.csproj|solutionrelative:studydrawer\\forms\\editimageform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7D1A44F3-B45A-4D17-B30D-3AE803B828E5}|StudyDrawer\\StudyDrawer.csproj|c:\\users\\egor\\source\\repos\\studydrawer\\studydrawer\\domaincode\\graphic\\node.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7D1A44F3-B45A-4D17-B30D-3AE803B828E5}|StudyDrawer\\StudyDrawer.csproj|solutionrelative:studydrawer\\domaincode\\graphic\\node.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7D1A44F3-B45A-4D17-B30D-3AE803B828E5}|StudyDrawer\\StudyDrawer.csproj|c:\\users\\egor\\source\\repos\\studydrawer\\studydrawer\\forms\\grapicsoperation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7D1A44F3-B45A-4D17-B30D-3AE803B828E5}|StudyDrawer\\StudyDrawer.csproj|solutionrelative:studydrawer\\forms\\grapicsoperation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,37 +46,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 307,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Egor\\source\\repos\\StudyDrawer\\StudyDrawer\\Form1.cs",
+              "RelativeDocumentMoniker": "StudyDrawer\\Form1.cs",
+              "ToolTip": "C:\\Users\\Egor\\source\\repos\\StudyDrawer\\StudyDrawer\\Form1.cs",
+              "RelativeToolTip": "StudyDrawer\\Form1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T19:06:10.017Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "EditImageForm.cs",
               "DocumentMoniker": "C:\\Users\\Egor\\source\\repos\\StudyDrawer\\StudyDrawer\\Forms\\EditImageForm.cs",
               "RelativeDocumentMoniker": "StudyDrawer\\Forms\\EditImageForm.cs",
               "ToolTip": "C:\\Users\\Egor\\source\\repos\\StudyDrawer\\StudyDrawer\\Forms\\EditImageForm.cs",
               "RelativeToolTip": "StudyDrawer\\Forms\\EditImageForm.cs",
-              "ViewState": "AgIAABQBAAAAAAAAAAAxwCoBAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAGgAAAAAAAAAAAAwwGEBAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-29T11:19:03.026Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Spline.cs",
               "DocumentMoniker": "C:\\Users\\Egor\\source\\repos\\StudyDrawer\\StudyDrawer\\DomainCode\\Graphic\\Spline.cs",
               "RelativeDocumentMoniker": "StudyDrawer\\DomainCode\\Graphic\\Spline.cs",
               "ToolTip": "C:\\Users\\Egor\\source\\repos\\StudyDrawer\\StudyDrawer\\DomainCode\\Graphic\\Spline.cs",
               "RelativeToolTip": "StudyDrawer\\DomainCode\\Graphic\\Spline.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBgAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAywCEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-29T11:31:08.215Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
               "Title": "EditImageForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "DocumentMoniker": "C:\\Users\\Egor\\source\\repos\\StudyDrawer\\StudyDrawer\\Forms\\EditImageForm.cs",
               "RelativeDocumentMoniker": "StudyDrawer\\Forms\\EditImageForm.cs",
@@ -84,7 +101,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "IFigure.cs",
               "DocumentMoniker": "C:\\Users\\Egor\\source\\repos\\StudyDrawer\\StudyDrawer\\DomainCode\\Graphic\\IFigure.cs",
               "RelativeDocumentMoniker": "StudyDrawer\\DomainCode\\Graphic\\IFigure.cs",
@@ -97,33 +114,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "EditImageForm.Designer.cs",
               "DocumentMoniker": "C:\\Users\\Egor\\source\\repos\\StudyDrawer\\StudyDrawer\\Forms\\EditImageForm.Designer.cs",
               "RelativeDocumentMoniker": "StudyDrawer\\Forms\\EditImageForm.Designer.cs",
               "ToolTip": "C:\\Users\\Egor\\source\\repos\\StudyDrawer\\StudyDrawer\\Forms\\EditImageForm.Designer.cs",
               "RelativeToolTip": "StudyDrawer\\Forms\\EditImageForm.Designer.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAnwD4AAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwBYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-29T12:10:02.85Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "Flush.cs",
               "DocumentMoniker": "C:\\Users\\Egor\\source\\repos\\StudyDrawer\\StudyDrawer\\DomainCode\\Graphic\\Flush.cs",
               "RelativeDocumentMoniker": "StudyDrawer\\DomainCode\\Graphic\\Flush.cs",
               "ToolTip": "C:\\Users\\Egor\\source\\repos\\StudyDrawer\\StudyDrawer\\DomainCode\\Graphic\\Flush.cs",
               "RelativeToolTip": "StudyDrawer\\DomainCode\\Graphic\\Flush.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAQwBwAAAA0AAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAAxwBwAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-29T12:48:43.028Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "Node.cs",
               "DocumentMoniker": "C:\\Users\\Egor\\source\\repos\\StudyDrawer\\StudyDrawer\\DomainCode\\Graphic\\Node.cs",
               "RelativeDocumentMoniker": "StudyDrawer\\DomainCode\\Graphic\\Node.cs",
@@ -136,7 +153,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
               "Title": "GrapicsOperation.cs",
               "DocumentMoniker": "C:\\Users\\Egor\\source\\repos\\StudyDrawer\\StudyDrawer\\Forms\\GrapicsOperation.cs",
               "RelativeDocumentMoniker": "StudyDrawer\\Forms\\GrapicsOperation.cs",

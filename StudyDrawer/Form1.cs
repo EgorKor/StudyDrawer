@@ -17,6 +17,7 @@ namespace StudyDrawer
         {
             Form form = new Forms.EditImageForm();
             form.ShowDialog();
+            GC.Collect();
         }
     }
 }

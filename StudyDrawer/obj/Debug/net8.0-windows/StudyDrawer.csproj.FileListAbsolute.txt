@@ -15,3 +15,4 @@ C:\Users\Egor\source\repos\StudyDrawer\StudyDrawer\obj\Debug\net8.0-windows\Stud
 C:\Users\Egor\source\repos\StudyDrawer\StudyDrawer\obj\Debug\net8.0-windows\StudyDrawer.genruntimeconfig.cache
 C:\Users\Egor\source\repos\StudyDrawer\StudyDrawer\obj\Debug\net8.0-windows\ref\StudyDrawer.dll
 C:\Users\Egor\source\repos\StudyDrawer\StudyDrawer\obj\Debug\net8.0-windows\StudyDrawer.Forms.EditImageForm.resources
+C:\Users\Egor\source\repos\StudyDrawer\StudyDrawer\obj\Debug\net8.0-windows\StudyDrawer.sourcelink.json
