@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("StudyDrawer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e306afe65dc80dc70b4dbcb3df2194a874ad0657")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+98a3dc9540f959455efe9d20a6e5dbc957ef0de0")]
 [assembly: System.Reflection.AssemblyProductAttribute("StudyDrawer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("StudyDrawer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

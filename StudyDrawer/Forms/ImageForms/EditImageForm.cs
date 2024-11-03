@@ -1,10 +1,13 @@
 ﻿using StudyDrawer.DomainCode.Graphic;
+using StudyDrawer.DomainCode.Notes;
+using StudyDrawer.Forms.ImageForms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Numerics;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,20 +23,23 @@ namespace StudyDrawer.Forms
         private Point _lastPoint;
         private Cursor _flushCursor;
         private Cursor _currentEditCursor;
-        private Node<IFigure>[] _figuresHead;
-        private Node<IFigure>[] _figuresTail;
+        private Node<IFigure> _figuresHead;
+        private Node<IFigure> _figuresTail;
         private GrapicsOperation _currentOperation;
         private Color _backgroundColor;
         private int _flushWidth;
         private List<Point> _splinePoints;
         private List<Rectangle> _flushRectangles;
-        private int _figureCount;
         private int _imageWidth;
         private int _imageHeight;
-        private List<Image> _images;
-        private int _imageIndex;
+        private Image _buffer;
+        private bool _isSaved;
+        private bool _isCanceled;
+        private Image _basicImage,_basicImageCopy;
+        private bool _isCleared;
 
-        public EditImageForm()
+
+        public EditImageForm(Image basicImage)
         {
             InitializeComponent();
             WindowState = FormWindowState.Maximized;
@@ -42,46 +48,57 @@ namespace StudyDrawer.Forms
             _currentEditCursor = Cursors.Cross;
             _pen = new Pen(Color.Black, 5.0f);
             _flushCursor = new Cursor(@"../../../Resources/Eraser.cur");
-
+            EditPictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
             _currentOperation = GrapicsOperation.OP_DRAW_SPLINE;
             _splinePoints = new List<Point>();
             _backgroundColor = EditPictureBox.BackColor;
             _flushWidth = 10;
             _flushRectangles = new List<Rectangle>();
+            _basicImage = basicImage;
         }
 
         private void EditImageForm_Load(object sender, EventArgs e)
         {
-            MinimumSize = new Size(Size.Width, Size.Height);
-            MaximumSize = new Size(Size.Width, Size.Height);
-            _imageIndex = 0;
-            _images = new List<Image>();
+            MinimumSize = Size;
+            MaximumSize = Size;
+            EditPictureBox.Image = _basicImage;
             _imageHeight = EditPictureBox.Height;
             _imageWidth = EditPictureBox.Width;
-            _figuresHead = new Node<IFigure>[10];
-            _figuresTail = new Node<IFigure>[10];  
-            for (int i = 0; i < 10; i++)
-            {
-                _images.Add(new Bitmap(_imageWidth, _imageHeight));
-            }
-            _graphics = Graphics.FromImage(_images[0]);
+            _buffer = new Bitmap(_basicImage,_imageWidth, _imageHeight);
+            _graphics = Graphics.FromImage(_buffer);
             _graphics.SmoothingMode =
                 System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
-            
-            
-            
+        }
+
+        public Image ShowEditImageFormDialog()
+        {
+            ShowDialog();
+            if (_isCanceled)
+            {
+                return _basicImage;
+            }
+            return _buffer;
         }
 
         private void ClearAndDrawFigures()
         {
-            _graphics.Clear(_backgroundColor);
-            if (_figuresTail[_imageIndex] == null)
+            if (_isCleared)
             {
-                EditPictureBox.Image = _images[_imageIndex];
+                _graphics.Clear(Color.White);
+            }
+            else
+            {
+                _buffer = new Bitmap(_basicImage, _imageWidth, _imageHeight);
+                EditPictureBox.Image = _buffer;
+                ReinitGraphics(EditPictureBox.Image);
+            }
+            if (_figuresTail == null)
+            {
+                EditPictureBox.Image = _buffer;
                 return;
             }
-            Node<IFigure> pointer = _figuresHead[_imageIndex];
-            while (pointer != _figuresTail[_imageIndex])
+            Node<IFigure> pointer = _figuresHead;
+            while (pointer != _figuresTail)
             {
                 if (pointer.Data is Flush)
                 {
@@ -93,7 +110,7 @@ namespace StudyDrawer.Forms
                 }
                 pointer = pointer.Next;
             }
-            if (_figuresTail[_imageIndex] != null)
+            if (_figuresTail != null)
             {
                 if (pointer.Data is Flush)
                 {
@@ -104,7 +121,8 @@ namespace StudyDrawer.Forms
                     pointer.Data.Draw(_graphics);
                 }
             }
-            EditPictureBox.Image = _images[_imageIndex];
+            EditPictureBox.Image = _buffer;
+            GC.Collect();
         }
 
         private void EditPictureBox_MouseDown(object sender, MouseEventArgs e)
@@ -134,7 +152,7 @@ namespace StudyDrawer.Forms
                             }
                             _graphics.FillEllipse(new SolidBrush(_pen.Color), e.X - _pen.Width / 2, e.Y - _pen.Width / 2, _pen.Width - 1, _pen.Width - 1);
                             _lastPoint = e.Location;
-                            EditPictureBox.Image = _images[_imageIndex];
+                            EditPictureBox.Image = _buffer;
                             _splinePoints.Add(e.Location);
                             break;
                         }
@@ -144,7 +162,7 @@ namespace StudyDrawer.Forms
                             {
                                 Rectangle flushRect = new Rectangle(e.Location.X - _flushWidth, e.Location.Y - _flushWidth, _flushWidth, _flushWidth);
                                 _graphics.FillRectangle(new SolidBrush(_backgroundColor), flushRect);
-                                EditPictureBox.Image = _images[_imageIndex];
+                                EditPictureBox.Image = _buffer;
                                 _flushRectangles.Add(flushRect);
                             }
                             break;
@@ -173,39 +191,38 @@ namespace StudyDrawer.Forms
                 AddFigure(new Flush(_flushRectangles, _backgroundColor));
                 _flushRectangles.Clear();
             }
-            _figureCount++;
         }
 
         private void AddFigure(IFigure figure)
         {
-            if (_figuresTail[_imageIndex] == null)
+            if (_figuresTail == null)
             {
-                _figuresHead[_imageIndex] = new Node<IFigure>()
+                _figuresHead = new Node<IFigure>()
                 {
                     Data = figure
                 };
-                _figuresTail[_imageIndex] = _figuresHead[_imageIndex];
+                _figuresTail = _figuresHead;
             }
             else
             {
                 Node<IFigure> newNode = new Node<IFigure>()
                 {
                     Data = figure,
-                    Prev = _figuresTail[_imageIndex]
+                    Prev = _figuresTail
                 };
 
-                if (_figuresTail[_imageIndex].Next != null)
+                if (_figuresTail.Next != null)
                 {
-                    DeleteNextNodes(_figuresTail[_imageIndex]);
+                    DeleteNextNodes(_figuresTail);
                 }
-                _figuresTail[_imageIndex].Next = newNode;
-                _figuresTail[_imageIndex] = newNode;
+                _figuresTail.Next = newNode;
+                _figuresTail = newNode;
             }
         }
 
         private void DeleteNextNodes(Node<IFigure> current)
         {
-            if(current == null)
+            if (current == null)
             {
                 return;
             }
@@ -223,34 +240,34 @@ namespace StudyDrawer.Forms
 
         private void StepBack()
         {
-            if (_figuresTail[_imageIndex] == null)
+            if (_figuresTail == null)
             {
                 return;
             }
-            if (_figuresTail[_imageIndex].Prev != null)
+            if (_figuresTail.Prev != null)
             {
-                _figuresTail[_imageIndex] = _figuresTail[_imageIndex].Prev;
+                _figuresTail = _figuresTail.Prev;
                 ClearAndDrawFigures();
             }
             else
             {
-                _figuresTail[_imageIndex] = null;
+                _figuresTail = null;
                 ClearAndDrawFigures();
             }
         }
 
         private void StepForward()
         {
-            if (_figuresTail[_imageIndex] == null)
+            if (_figuresTail == null)
             {
-                if (_figuresHead[_imageIndex] != null)
-                    _figuresTail[_imageIndex] = _figuresHead[_imageIndex];
+                if (_figuresHead != null)
+                    _figuresTail = _figuresHead;
                 ClearAndDrawFigures();
                 return;
             }
-            if (_figuresTail[_imageIndex].Next != null)
+            if (_figuresTail.Next != null)
             {
-                _figuresTail[_imageIndex] = _figuresTail[_imageIndex].Next;
+                _figuresTail = _figuresTail.Next;
                 ClearAndDrawFigures();
             }
             else
@@ -259,7 +276,13 @@ namespace StudyDrawer.Forms
             }
         }
 
-
+        private void ReinitGraphics(Image image)
+        {
+            _graphics.Dispose();
+            _graphics = Graphics.FromImage(image);
+            _graphics.SmoothingMode =
+            System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
+        }
 
         private void PenColorButton_Click(object sender, EventArgs e)
         {
@@ -273,13 +296,6 @@ namespace StudyDrawer.Forms
             BackgroundColorDialog.ShowDialog();
             BackgroundColorButton.BackColor = BackgroundColorDialog.Color;
             _backgroundColor = BackgroundColorDialog.Color;
-            int currentIndex = _imageIndex;
-            for(int i = 0; i < 10; i++)
-            {
-                _imageIndex = i;
-                ClearAndDrawFigures();
-            }
-            _imageIndex = currentIndex;
             ClearAndDrawFigures();
         }
 
@@ -326,53 +342,53 @@ namespace StudyDrawer.Forms
             StepForward();
         }
 
-        private void EditPanel_Scroll(object sender, ScrollEventArgs e)
-        {
-
-        }
-
-        private void EditPictureBox_SizeChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void ClearButton_Click(object sender, EventArgs e)
         {
-            DeleteNextNodes(_figuresHead[_imageIndex]);
-            _figuresHead[_imageIndex] = null;
-            _figuresTail[_imageIndex] = null;
+            DeleteNextNodes(_figuresHead);
+            _figuresHead = null;
+            _figuresTail = null;
+            _isCleared = true;
             ClearAndDrawFigures();
         }
 
-        private void UpButton_Click(object sender, EventArgs e)
-        {
-            if (_imageIndex != 0)
-            {
-                _imageIndex--;
-                ImageIndexLabel.Text = $"Часть - {_imageIndex + 1}";
-                ReinitGraphics();
-                ClearAndDrawFigures();
-            }
 
+        private void EditImageForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (!_isSaved && !_isCanceled)
+            {
+                DialogResult result = MessageBox.Show("Сохранить результат работы?", "Предупреждение", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Hand);
+                switch (result)
+                {
+                    case DialogResult.Yes:
+                        {
+                            _isSaved = true;
+                            break;
+                        }
+
+                    case DialogResult.No:
+                        {
+                            _isCanceled = true;
+                            break;
+                        }
+                    case DialogResult.Cancel:
+                        {
+                            e.Cancel = true;
+                            break;
+                        }
+                }
+            }
         }
 
-        private void DownButton_Click(object sender, EventArgs e)
+        private void SaveButton_Click(object sender, EventArgs e)
         {
-            if (_imageIndex != 9)
-            {
-                _imageIndex++;
-                ImageIndexLabel.Text = $"Часть - {_imageIndex + 1}";
-                ReinitGraphics();
-                ClearAndDrawFigures();
-            }
+            _isSaved = true;
+            Close();
         }
 
-        private void ReinitGraphics()
+        private void CancelButton_Click(object sender, EventArgs e)
         {
-            _graphics.Dispose();
-            _graphics = Graphics.FromImage(_images[_imageIndex]);
-            _graphics.SmoothingMode =
-            System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
+            _isCanceled = true;
+            Close();
         }
     }
 }

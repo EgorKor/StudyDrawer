@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace StudyDrawer.Forms
+namespace StudyDrawer.Forms.ImageForms
 {
     public enum GrapicsOperation
     {

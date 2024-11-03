@@ -1,6 +1,6 @@
 ﻿namespace StudyDrawer.Forms
 {
-    partial class EditImageForm
+    partial class DrawingImageForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            EditPictureBox = new PictureBox();
             BackButton = new Button();
             ForwardButton = new Button();
             PenColorButton = new Button();
@@ -45,40 +44,24 @@
             FlushWidthLabel = new Label();
             FlushWidthNumeric = new NumericUpDown();
             EditPanel = new Panel();
+            EditPictureBox = new PictureBox();
             ClearButton = new Button();
             UpButton = new Button();
             DownButton = new Button();
             ImageIndexLabel = new Label();
-            ((System.ComponentModel.ISupportInitialize)EditPictureBox).BeginInit();
+            SaveButton = new Button();
+            CancelButton = new Button();
             ((System.ComponentModel.ISupportInitialize)PenWidthNumeric).BeginInit();
             ((System.ComponentModel.ISupportInitialize)FlushWidthNumeric).BeginInit();
             EditPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)EditPictureBox).BeginInit();
             SuspendLayout();
-            // 
-            // EditPictureBox
-            // 
-            EditPictureBox.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            EditPictureBox.BackColor = SystemColors.ControlLightLight;
-            EditPictureBox.Location = new Point(0, 0);
-            EditPictureBox.Margin = new Padding(3, 2, 3, 2);
-            EditPictureBox.Name = "EditPictureBox";
-            EditPictureBox.Size = new Size(1167, 740);
-            EditPictureBox.SizeMode = PictureBoxSizeMode.AutoSize;
-            EditPictureBox.TabIndex = 0;
-            EditPictureBox.TabStop = false;
-            EditPictureBox.SizeChanged += EditPictureBox_SizeChanged;
-            EditPictureBox.MouseDown += EditPictureBox_MouseDown;
-            EditPictureBox.MouseEnter += EditPictureBox_MouseEnter;
-            EditPictureBox.MouseLeave += EditPictureBox_MouseLeave;
-            EditPictureBox.MouseMove += EditPictureBox_MouseMove;
-            EditPictureBox.MouseUp += EditPictureBox_MouseUp;
             // 
             // BackButton
             // 
-            BackButton.Location = new Point(100, 10);
-            BackButton.Margin = new Padding(3, 2, 3, 2);
+            BackButton.Location = new Point(114, 13);
             BackButton.Name = "BackButton";
-            BackButton.Size = new Size(82, 22);
+            BackButton.Size = new Size(94, 29);
             BackButton.TabIndex = 1;
             BackButton.Text = "←";
             BackButton.UseVisualStyleBackColor = true;
@@ -86,10 +69,9 @@
             // 
             // ForwardButton
             // 
-            ForwardButton.Location = new Point(187, 10);
-            ForwardButton.Margin = new Padding(3, 2, 3, 2);
+            ForwardButton.Location = new Point(214, 13);
             ForwardButton.Name = "ForwardButton";
-            ForwardButton.Size = new Size(82, 22);
+            ForwardButton.Size = new Size(94, 29);
             ForwardButton.TabIndex = 2;
             ForwardButton.Text = "→";
             ForwardButton.UseVisualStyleBackColor = true;
@@ -98,20 +80,18 @@
             // PenColorButton
             // 
             PenColorButton.BackColor = SystemColors.ActiveCaptionText;
-            PenColorButton.Location = new Point(6, 38);
-            PenColorButton.Margin = new Padding(3, 2, 3, 2);
+            PenColorButton.Location = new Point(7, 51);
             PenColorButton.Name = "PenColorButton";
-            PenColorButton.Size = new Size(82, 22);
+            PenColorButton.Size = new Size(94, 29);
             PenColorButton.TabIndex = 3;
             PenColorButton.UseVisualStyleBackColor = false;
             PenColorButton.Click += PenColorButton_Click;
             // 
             // PenButton
             // 
-            PenButton.Location = new Point(6, 280);
-            PenButton.Margin = new Padding(3, 2, 3, 2);
+            PenButton.Location = new Point(7, 373);
             PenButton.Name = "PenButton";
-            PenButton.Size = new Size(82, 22);
+            PenButton.Size = new Size(94, 29);
             PenButton.TabIndex = 4;
             PenButton.Text = "Перо";
             PenButton.UseVisualStyleBackColor = true;
@@ -119,10 +99,9 @@
             // 
             // FlushButton
             // 
-            FlushButton.Location = new Point(6, 306);
-            FlushButton.Margin = new Padding(3, 2, 3, 2);
+            FlushButton.Location = new Point(7, 408);
             FlushButton.Name = "FlushButton";
-            FlushButton.Size = new Size(82, 22);
+            FlushButton.Size = new Size(94, 29);
             FlushButton.TabIndex = 5;
             FlushButton.Text = "Стерка";
             FlushButton.UseVisualStyleBackColor = true;
@@ -130,12 +109,11 @@
             // 
             // PenWidthNumeric
             // 
-            PenWidthNumeric.Location = new Point(6, 160);
-            PenWidthNumeric.Margin = new Padding(3, 2, 3, 2);
+            PenWidthNumeric.Location = new Point(7, 213);
             PenWidthNumeric.Maximum = new decimal(new int[] { 5, 0, 0, 0 });
             PenWidthNumeric.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
             PenWidthNumeric.Name = "PenWidthNumeric";
-            PenWidthNumeric.Size = new Size(82, 23);
+            PenWidthNumeric.Size = new Size(94, 27);
             PenWidthNumeric.TabIndex = 6;
             PenWidthNumeric.Value = new decimal(new int[] { 1, 0, 0, 0 });
             PenWidthNumeric.ValueChanged += PenWidthNumeric_ValueChanged;
@@ -143,9 +121,9 @@
             // PenWidthLabel
             // 
             PenWidthLabel.AutoSize = true;
-            PenWidthLabel.Location = new Point(6, 128);
+            PenWidthLabel.Location = new Point(7, 171);
             PenWidthLabel.Name = "PenWidthLabel";
-            PenWidthLabel.Size = new Size(62, 30);
+            PenWidthLabel.Size = new Size(76, 40);
             PenWidthLabel.TabIndex = 7;
             PenWidthLabel.Text = "Толщина \r\nпера";
             // 
@@ -153,10 +131,9 @@
             // 
             BackgroundColorButton.BackColor = SystemColors.ControlLightLight;
             BackgroundColorButton.ForeColor = SystemColors.ButtonHighlight;
-            BackgroundColorButton.Location = new Point(7, 88);
-            BackgroundColorButton.Margin = new Padding(3, 2, 3, 2);
+            BackgroundColorButton.Location = new Point(8, 117);
             BackgroundColorButton.Name = "BackgroundColorButton";
-            BackgroundColorButton.Size = new Size(82, 22);
+            BackgroundColorButton.Size = new Size(94, 29);
             BackgroundColorButton.TabIndex = 8;
             BackgroundColorButton.UseVisualStyleBackColor = false;
             BackgroundColorButton.Click += BackgroundColorButton_Click;
@@ -164,38 +141,37 @@
             // PenColorLabel
             // 
             PenColorLabel.AutoSize = true;
-            PenColorLabel.Location = new Point(11, 13);
+            PenColorLabel.Location = new Point(13, 17);
             PenColorLabel.Name = "PenColorLabel";
-            PenColorLabel.Size = new Size(62, 15);
+            PenColorLabel.Size = new Size(80, 20);
             PenColorLabel.TabIndex = 9;
             PenColorLabel.Text = "Цвет пера";
             // 
             // BackgroundColorLabel
             // 
             BackgroundColorLabel.AutoSize = true;
-            BackgroundColorLabel.Location = new Point(11, 71);
+            BackgroundColorLabel.Location = new Point(13, 95);
             BackgroundColorLabel.Name = "BackgroundColorLabel";
-            BackgroundColorLabel.Size = new Size(65, 15);
+            BackgroundColorLabel.Size = new Size(82, 20);
             BackgroundColorLabel.TabIndex = 10;
             BackgroundColorLabel.Text = "Цвет фона";
             // 
             // FlushWidthLabel
             // 
             FlushWidthLabel.AutoSize = true;
-            FlushWidthLabel.Location = new Point(7, 196);
+            FlushWidthLabel.Location = new Point(8, 261);
             FlushWidthLabel.Name = "FlushWidthLabel";
-            FlushWidthLabel.Size = new Size(62, 30);
+            FlushWidthLabel.Size = new Size(76, 40);
             FlushWidthLabel.TabIndex = 12;
             FlushWidthLabel.Text = "Толщина \r\nстерки";
             // 
             // FlushWidthNumeric
             // 
-            FlushWidthNumeric.Location = new Point(7, 228);
-            FlushWidthNumeric.Margin = new Padding(3, 2, 3, 2);
+            FlushWidthNumeric.Location = new Point(8, 304);
             FlushWidthNumeric.Maximum = new decimal(new int[] { 5, 0, 0, 0 });
             FlushWidthNumeric.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
             FlushWidthNumeric.Name = "FlushWidthNumeric";
-            FlushWidthNumeric.Size = new Size(82, 23);
+            FlushWidthNumeric.Size = new Size(94, 27);
             FlushWidthNumeric.TabIndex = 11;
             FlushWidthNumeric.Value = new decimal(new int[] { 1, 0, 0, 0 });
             FlushWidthNumeric.ValueChanged += FlushWidthNumeric_ValueChanged;
@@ -205,18 +181,33 @@
             EditPanel.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             EditPanel.AutoScroll = true;
             EditPanel.Controls.Add(EditPictureBox);
-            EditPanel.Location = new Point(101, 39);
-            EditPanel.Margin = new Padding(3, 2, 3, 2);
+            EditPanel.Location = new Point(115, 52);
             EditPanel.Name = "EditPanel";
-            EditPanel.Size = new Size(934, 524);
+            EditPanel.Size = new Size(1067, 699);
             EditPanel.TabIndex = 13;
-            EditPanel.Scroll += EditPanel_Scroll;
+            // 
+            // EditPictureBox
+            // 
+            EditPictureBox.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            EditPictureBox.BackColor = SystemColors.ControlLightLight;
+            EditPictureBox.Location = new Point(0, 3);
+            EditPictureBox.Name = "EditPictureBox";
+            EditPictureBox.Size = new Size(1167, 740);
+            EditPictureBox.SizeMode = PictureBoxSizeMode.AutoSize;
+            EditPictureBox.TabIndex = 0;
+            EditPictureBox.TabStop = false;
+            EditPictureBox.MouseDown += EditPictureBox_MouseDown;
+            EditPictureBox.MouseEnter += EditPictureBox_MouseEnter;
+            EditPictureBox.MouseLeave += EditPictureBox_MouseLeave;
+            EditPictureBox.MouseMove += EditPictureBox_MouseMove;
+            EditPictureBox.MouseUp += EditPictureBox_MouseUp;
             // 
             // ClearButton
             // 
-            ClearButton.Location = new Point(7, 333);
+            ClearButton.Location = new Point(8, 444);
+            ClearButton.Margin = new Padding(3, 4, 3, 4);
             ClearButton.Name = "ClearButton";
-            ClearButton.Size = new Size(81, 23);
+            ClearButton.Size = new Size(93, 31);
             ClearButton.TabIndex = 14;
             ClearButton.Text = "Очистить";
             ClearButton.UseVisualStyleBackColor = true;
@@ -224,9 +215,10 @@
             // 
             // UpButton
             // 
-            UpButton.Location = new Point(6, 436);
+            UpButton.Location = new Point(7, 581);
+            UpButton.Margin = new Padding(3, 4, 3, 4);
             UpButton.Name = "UpButton";
-            UpButton.Size = new Size(76, 31);
+            UpButton.Size = new Size(87, 41);
             UpButton.TabIndex = 15;
             UpButton.Text = "↑";
             UpButton.UseVisualStyleBackColor = true;
@@ -234,9 +226,10 @@
             // 
             // DownButton
             // 
-            DownButton.Location = new Point(7, 488);
+            DownButton.Location = new Point(8, 651);
+            DownButton.Margin = new Padding(3, 4, 3, 4);
             DownButton.Name = "DownButton";
-            DownButton.Size = new Size(75, 28);
+            DownButton.Size = new Size(86, 37);
             DownButton.TabIndex = 16;
             DownButton.Text = "↓";
             DownButton.UseVisualStyleBackColor = true;
@@ -245,17 +238,43 @@
             // ImageIndexLabel
             // 
             ImageIndexLabel.AutoSize = true;
-            ImageIndexLabel.Location = new Point(7, 470);
+            ImageIndexLabel.Location = new Point(8, 627);
             ImageIndexLabel.Name = "ImageIndexLabel";
-            ImageIndexLabel.Size = new Size(47, 15);
+            ImageIndexLabel.Size = new Size(60, 20);
             ImageIndexLabel.TabIndex = 17;
             ImageIndexLabel.Text = "Часть 1";
             // 
-            // EditImageForm
+            // SaveButton
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            SaveButton.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            SaveButton.Location = new Point(974, 15);
+            SaveButton.Margin = new Padding(3, 4, 3, 4);
+            SaveButton.Name = "SaveButton";
+            SaveButton.Size = new Size(94, 31);
+            SaveButton.TabIndex = 18;
+            SaveButton.Text = "Сохранить";
+            SaveButton.UseVisualStyleBackColor = true;
+            SaveButton.Click += SaveButton_Click;
+            // 
+            // CancelButton
+            // 
+            CancelButton.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            CancelButton.Location = new Point(1074, 13);
+            CancelButton.Margin = new Padding(3, 4, 3, 4);
+            CancelButton.Name = "CancelButton";
+            CancelButton.Size = new Size(86, 31);
+            CancelButton.TabIndex = 19;
+            CancelButton.Text = "Отмена";
+            CancelButton.UseVisualStyleBackColor = true;
+            CancelButton.Click += CancelButton_Click;
+            // 
+            // DrawingImageForm
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1036, 571);
+            ClientSize = new Size(1184, 761);
+            Controls.Add(CancelButton);
+            Controls.Add(SaveButton);
             Controls.Add(ImageIndexLabel);
             Controls.Add(DownButton);
             Controls.Add(UpButton);
@@ -273,23 +292,21 @@
             Controls.Add(PenColorButton);
             Controls.Add(ForwardButton);
             Controls.Add(BackButton);
-            Margin = new Padding(3, 2, 3, 2);
-            MinimumSize = new Size(1052, 610);
-            Name = "EditImageForm";
+            MinimumSize = new Size(1200, 795);
+            Name = "DrawingImageForm";
             Text = "Набросок";
+            FormClosing += EditImageForm_FormClosing;
             Load += EditImageForm_Load;
-            ((System.ComponentModel.ISupportInitialize)EditPictureBox).EndInit();
             ((System.ComponentModel.ISupportInitialize)PenWidthNumeric).EndInit();
             ((System.ComponentModel.ISupportInitialize)FlushWidthNumeric).EndInit();
             EditPanel.ResumeLayout(false);
             EditPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)EditPictureBox).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private PictureBox EditPictureBox;
         private Button BackButton;
         private Button ForwardButton;
         private Button PenColorButton;
@@ -310,5 +327,8 @@
         private Button UpButton;
         private Button DownButton;
         private Label ImageIndexLabel;
+        private Button SaveButton;
+        private Button CancelButton;
+        private PictureBox EditPictureBox;
     }
 }
