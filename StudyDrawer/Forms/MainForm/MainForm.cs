@@ -1,5 +1,7 @@
 using StudyDrawer.DomainCode.Notes;
+using StudyDrawer.DomainCode.Util;
 using StudyDrawer.Forms;
+using StudyDrawer.Forms.CreationForms;
 using StudyDrawer.Forms.ImageForms;
 using System.Drawing.Drawing2D;
 using System.Windows.Forms;
@@ -9,7 +11,7 @@ namespace StudyDrawer
     public partial class MainForm : Form
     {
         private int _contentWidth;
-
+        private ListObserver<Notebook> _notebooks;
 
         public MainForm()
         {
@@ -18,6 +20,27 @@ namespace StudyDrawer
             _contentWidth = ContentLayoutPanel.Width;
             OpenFileDialog.Filter = "*.jpg;*.jpeg;*.png;*.bmp;*.gif|*.jpg;*.jpeg;*.png;*.bmp;*.gif|All Files|*.*";
             OpenFileDialog.Title = "Select an Image";
+            NoteAddButton.Enabled = false;
+            _notebooks = NotebookSerializer.LoadNotebooks();
+            _notebooks.OnSizeChanged += (count) =>
+            {
+                if (count == 0)
+                {
+                    NoteAddButton.Enabled = false;
+                }
+                else
+                {
+                    NoteAddButton.Enabled = true;
+                }
+            };
+        }
+
+        private ListObserver<Notebook> LoadNotebooks()
+        {
+            ListObserver<Notebook> notebooks = new ListObserver<Notebook>();
+            //TODO - сделать загрузку блокнотов из файла
+            //по сути десериализацию
+            return notebooks;
         }
 
         private void MainForm_Load(object sender, EventArgs e)
@@ -38,7 +61,7 @@ namespace StudyDrawer
             createImageButton.Size = new Size(130, 25);
             createImageButton.Text = "+ Изображение";
             panel.Controls.Add(createImageButton);
-            
+
             createImageButton.Location = new Point(panel.Width / 2 - createImageButton.Width, panel.Height / 4);
             createImageButton.Click += AddImageClick;
 
@@ -58,14 +81,15 @@ namespace StudyDrawer
             return panel;
         }
 
-        
+
         private void AddNotebookButton_Click(object sender, EventArgs e)
         {
             //TODO - заменить на реальный список блокнотов
-            NotebookAdditionForm form = new NotebookAdditionForm(new List<string>());
+            NotebookAdditionForm form = new NotebookAdditionForm(_notebooks);
             Notebook notebook = form.ShowNotebookAddtionDialog();
             if (notebook != null)
             {
+                _notebooks.Add(notebook);
                 TreeNode notebookNode = new TreeNode(notebook.Name);
                 NotebookTreeView.Nodes.Add(notebookNode);
             }
@@ -87,7 +111,8 @@ namespace StudyDrawer
             ContentLayoutPanel.Controls.SetChildIndex(newAdditionPanel, index + 2);
         }
 
-        private void ContentTextChanged(object sender, EventArgs e) {
+        private void ContentTextChanged(object sender, EventArgs e)
+        {
             RichTextBox richTextBox = (RichTextBox)sender;
             if (richTextBox.Text.Length == 0)
             {
@@ -146,7 +171,7 @@ namespace StudyDrawer
                 }
                 Panel newAdditionPanel = CreateNewAdditionPanel();
                 ContentLayoutPanel.Controls.Add(newAdditionPanel);
-                ContentLayoutPanel.Controls.SetChildIndex(newAdditionPanel,i);
+                ContentLayoutPanel.Controls.SetChildIndex(newAdditionPanel, i);
             }
             GC.Collect();
         }
@@ -163,13 +188,13 @@ namespace StudyDrawer
 
         private void OnImageMouseDown(object sender, MouseEventArgs e)
         {
-            
+
             if (e.Button == MouseButtons.Right)
             {
-                DialogResult res = MessageBox.Show("Вы уверены что хотите удалить рисунок","Подтверждение",MessageBoxButtons.YesNo, MessageBoxIcon.Information);
-                if(res == DialogResult.Yes)
-                {   
-                    PictureBox senderPictureBox = (PictureBox)sender; 
+                DialogResult res = MessageBox.Show("Вы уверены что хотите удалить рисунок", "Подтверждение", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+                if (res == DialogResult.Yes)
+                {
+                    PictureBox senderPictureBox = (PictureBox)sender;
                     int index = ContentLayoutPanel.Controls.IndexOf(senderPictureBox);
                     DeleteElement(index);
                 }
@@ -216,20 +241,64 @@ namespace StudyDrawer
                 }
             }
         }
-        
+
         private void CenterAllControls(Control.ControlCollection controls)
         {
-            float ratio = (float) ContentLayoutPanel.Width / _contentWidth;
-            if(ratio > 0)
+            float ratio = (float)ContentLayoutPanel.Width / _contentWidth;
+            if (ratio > 0)
             {
                 return;
             }
             foreach (Control control in controls)
-            {   
-                control.Location = new Point((int)((float)control.Location.X * ratio), control.Location.Y);   
+            {
+                control.Location = new Point((int)((float)control.Location.X * ratio), control.Location.Y);
             }
         }
 
-        
+        private void NotebookTreeView_NodeMouseDoubleClick(object sender, TreeNodeMouseClickEventArgs e)
+        {
+            //TODO - сделать рендер
+        }
+
+        private void NoteAddButton_Click(object sender, EventArgs e)
+        {
+            if (_notebooks.Count == 0)
+            {
+                MessageBox.Show("Для того чтобы добавить заметку - добавьте хотя-бы один блокнот", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            NoteAdditionForm form = new NoteAdditionForm(_notebooks);
+            (Notebook, Note) note = form.ShowNoteCreationDialog();
+            if (note.Item1 != null && note.Item2 != null)
+            {
+                note.Item1.Notes.Add(note.Item2);
+                RenderTreeView();
+            }
+        }
+
+
+        private void RenderTreeView()
+        {
+            NotebookTreeView.Nodes.Clear();
+            foreach (Notebook notebook in _notebooks)
+            {
+                TreeNode treeNode = new TreeNode(notebook.Name);
+                foreach (Note note in notebook.Notes)
+                {
+                    TreeNode noteNode = new TreeNode(note.Name);
+                    treeNode.Nodes.Add(noteNode);
+                }
+                NotebookTreeView.Nodes.Add(treeNode);
+            }
+        }
+
+        private void NotebookTreeView_NodeMouseClick(object sender, TreeNodeMouseClickEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                MessageBox.Show("Вы уверены что хотите удалить этот элемент?", "Предупреждение", MessageBoxButtons.YesNo, MessageBoxIcon.Information); ;
+                //TODO - добавить реальное удаление
+            }
+        }
     }
 }

@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace StudyDrawer.DomainCode.Notes
 {
+    [Serializable]
     public class Note
     {
         public string Name { get; set; }
-        public string Description { get; set; }
         public DateTime CreatedAt { get; set; }
         public DateTime UpdatedAt { get; set; }
-        List<INoteContent> Content { get; set; }
+        public List<INoteContent> Content { get; set; }
     }
 }

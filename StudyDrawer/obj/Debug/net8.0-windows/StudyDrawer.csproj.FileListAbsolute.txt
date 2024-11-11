@@ -19,3 +19,9 @@ C:\Users\Egor\source\repos\StudyDrawer\StudyDrawer\obj\Debug\net8.0-windows\Stud
 C:\Users\Egor\source\repos\StudyDrawer\StudyDrawer\obj\Debug\net8.0-windows\StudyDrawer.Forms.DrawingImageForm.resources
 C:\Users\Egor\source\repos\StudyDrawer\StudyDrawer\obj\Debug\net8.0-windows\StudyDrawer.Properties.Resources.resources
 C:\Users\Egor\source\repos\StudyDrawer\StudyDrawer\obj\Debug\net8.0-windows\StudyDrawer.Forms.EditImageForm.resources
+C:\Users\Egor\source\repos\StudyDrawer\StudyDrawer\obj\Debug\net8.0-windows\StudyDrawer.Forms.CreationForms.NoteAdditionForm.resources
+C:\Users\Egor\source\repos\StudyDrawer\StudyDrawer\bin\Debug\net8.0-windows\MessagePack.dll
+C:\Users\Egor\source\repos\StudyDrawer\StudyDrawer\bin\Debug\net8.0-windows\MessagePack.Annotations.dll
+C:\Users\Egor\source\repos\StudyDrawer\StudyDrawer\bin\Debug\net8.0-windows\Microsoft.NET.StringTools.dll
+C:\Users\Egor\source\repos\StudyDrawer\StudyDrawer\obj\Debug\net8.0-windows\StudyDrawer.csproj.AssemblyReference.cache
+C:\Users\Egor\source\repos\StudyDrawer\StudyDrawer\obj\Debug\net8.0-windows\StudyDra.FBFE0D6F.Up2Date

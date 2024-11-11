@@ -13,11 +13,11 @@ namespace StudyDrawer.Forms
 {
     public partial class NotebookAdditionForm : Form
     {
-        private IEnumerable<string> _existingNotebooks;
+        private IEnumerable<Notebook> _existingNotebooks;
         private bool _isSaved;
 
 
-        public NotebookAdditionForm(IEnumerable<string> notebookNames)
+        public NotebookAdditionForm(IEnumerable<Notebook> notebookNames)
         {
             InitializeComponent();
             _existingNotebooks = notebookNames;
@@ -65,10 +65,22 @@ namespace StudyDrawer.Forms
             {
                 throw new Exception("Название должно быть от 5 до 30 символов");
             }
-            if (_existingNotebooks.Contains(name))
+            if (ContainsByName(name))
             {
                 throw new Exception("Блокнот с таким названием уже существует");
             }
+        }
+
+        private bool ContainsByName(string notebookName)
+        {
+            foreach (Notebook notebook in _existingNotebooks)
+            {
+                if (notebook.Name.Equals(notebookName))
+                {
+                    return true;
+                }
+            }
+            return false;
         }
 
         

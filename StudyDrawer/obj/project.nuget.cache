@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "QoufOyr6fJA=",
+  "dgSpecHash": "PSiGyW+M8nI=",
   "success": true,
   "projectFilePath": "C:\\Users\\Egor\\source\\repos\\StudyDrawer\\StudyDrawer\\StudyDrawer.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Egor\\.nuget\\packages\\messagepack\\2.5.187\\messagepack.2.5.187.nupkg.sha512",
+    "C:\\Users\\Egor\\.nuget\\packages\\messagepack.annotations\\2.5.187\\messagepack.annotations.2.5.187.nupkg.sha512",
+    "C:\\Users\\Egor\\.nuget\\packages\\microsoft.net.stringtools\\17.6.3\\microsoft.net.stringtools.17.6.3.nupkg.sha512"
+  ],
   "logs": []
 }

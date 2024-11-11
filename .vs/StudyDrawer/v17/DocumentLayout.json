@@ -3,28 +3,52 @@
   "WorkspaceRootPath": "C:\\Users\\Egor\\source\\repos\\StudyDrawer\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7D1A44F3-B45A-4D17-B30D-3AE803B828E5}|StudyDrawer\\StudyDrawer.csproj|c:\\users\\egor\\source\\repos\\studydrawer\\studydrawer\\forms\\mainform\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7D1A44F3-B45A-4D17-B30D-3AE803B828E5}|StudyDrawer\\StudyDrawer.csproj|solutionrelative:studydrawer\\forms\\mainform\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7D1A44F3-B45A-4D17-B30D-3AE803B828E5}|StudyDrawer\\StudyDrawer.csproj|c:\\users\\egor\\source\\repos\\studydrawer\\studydrawer\\forms\\imageforms\\editimageform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7D1A44F3-B45A-4D17-B30D-3AE803B828E5}|StudyDrawer\\StudyDrawer.csproj|solutionrelative:studydrawer\\forms\\imageforms\\editimageform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7D1A44F3-B45A-4D17-B30D-3AE803B828E5}|StudyDrawer\\StudyDrawer.csproj|c:\\users\\egor\\source\\repos\\studydrawer\\studydrawer\\forms\\imageforms\\editimageform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7D1A44F3-B45A-4D17-B30D-3AE803B828E5}|StudyDrawer\\StudyDrawer.csproj|solutionrelative:studydrawer\\forms\\imageforms\\editimageform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7D1A44F3-B45A-4D17-B30D-3AE803B828E5}|StudyDrawer\\StudyDrawer.csproj|c:\\users\\egor\\source\\repos\\studydrawer\\studydrawer\\forms\\imageforms\\drawingimageform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7D1A44F3-B45A-4D17-B30D-3AE803B828E5}|StudyDrawer\\StudyDrawer.csproj|solutionrelative:studydrawer\\forms\\imageforms\\drawingimageform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7D1A44F3-B45A-4D17-B30D-3AE803B828E5}|StudyDrawer\\StudyDrawer.csproj|c:\\users\\egor\\source\\repos\\studydrawer\\studydrawer\\forms\\imageforms\\editimageform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7D1A44F3-B45A-4D17-B30D-3AE803B828E5}|StudyDrawer\\StudyDrawer.csproj|solutionrelative:studydrawer\\forms\\imageforms\\editimageform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7D1A44F3-B45A-4D17-B30D-3AE803B828E5}|StudyDrawer\\StudyDrawer.csproj|c:\\users\\egor\\source\\repos\\studydrawer\\studydrawer\\forms\\imageforms\\drawingimageform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7D1A44F3-B45A-4D17-B30D-3AE803B828E5}|StudyDrawer\\StudyDrawer.csproj|solutionrelative:studydrawer\\forms\\imageforms\\drawingimageform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7D1A44F3-B45A-4D17-B30D-3AE803B828E5}|StudyDrawer\\StudyDrawer.csproj|C:\\Users\\Egor\\source\\repos\\StudyDrawer\\studydrawer\\forms\\mainform\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{7D1A44F3-B45A-4D17-B30D-3AE803B828E5}|StudyDrawer\\StudyDrawer.csproj|solutionrelative:studydrawer\\forms\\mainform\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D1A44F3-B45A-4D17-B30D-3AE803B828E5}|StudyDrawer\\StudyDrawer.csproj|c:\\users\\egor\\source\\repos\\studydrawer\\studydrawer\\forms\\mainform\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D1A44F3-B45A-4D17-B30D-3AE803B828E5}|StudyDrawer\\StudyDrawer.csproj|solutionrelative:studydrawer\\forms\\mainform\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D1A44F3-B45A-4D17-B30D-3AE803B828E5}|StudyDrawer\\StudyDrawer.csproj|c:\\users\\egor\\source\\repos\\studydrawer\\studydrawer\\domaincode\\util\\notebookserializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D1A44F3-B45A-4D17-B30D-3AE803B828E5}|StudyDrawer\\StudyDrawer.csproj|solutionrelative:studydrawer\\domaincode\\util\\notebookserializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D1A44F3-B45A-4D17-B30D-3AE803B828E5}|StudyDrawer\\StudyDrawer.csproj|c:\\users\\egor\\source\\repos\\studydrawer\\studydrawer\\actualtasks.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{7D1A44F3-B45A-4D17-B30D-3AE803B828E5}|StudyDrawer\\StudyDrawer.csproj|solutionrelative:studydrawer\\actualtasks.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D1A44F3-B45A-4D17-B30D-3AE803B828E5}|StudyDrawer\\StudyDrawer.csproj|c:\\users\\egor\\source\\repos\\studydrawer\\studydrawer\\domaincode\\notes\\note.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D1A44F3-B45A-4D17-B30D-3AE803B828E5}|StudyDrawer\\StudyDrawer.csproj|solutionrelative:studydrawer\\domaincode\\notes\\note.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D1A44F3-B45A-4D17-B30D-3AE803B828E5}|StudyDrawer\\StudyDrawer.csproj|c:\\users\\egor\\source\\repos\\studydrawer\\studydrawer\\domaincode\\notes\\notebook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D1A44F3-B45A-4D17-B30D-3AE803B828E5}|StudyDrawer\\StudyDrawer.csproj|solutionrelative:studydrawer\\domaincode\\notes\\notebook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D1A44F3-B45A-4D17-B30D-3AE803B828E5}|StudyDrawer\\StudyDrawer.csproj|c:\\users\\egor\\source\\repos\\studydrawer\\studydrawer\\domaincode\\util\\listobserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D1A44F3-B45A-4D17-B30D-3AE803B828E5}|StudyDrawer\\StudyDrawer.csproj|solutionrelative:studydrawer\\domaincode\\util\\listobserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D1A44F3-B45A-4D17-B30D-3AE803B828E5}|StudyDrawer\\StudyDrawer.csproj|c:\\users\\egor\\source\\repos\\studydrawer\\studydrawer\\forms\\creationforms\\noteadditionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D1A44F3-B45A-4D17-B30D-3AE803B828E5}|StudyDrawer\\StudyDrawer.csproj|solutionrelative:studydrawer\\forms\\creationforms\\noteadditionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D1A44F3-B45A-4D17-B30D-3AE803B828E5}|StudyDrawer\\StudyDrawer.csproj|C:\\Users\\Egor\\source\\repos\\StudyDrawer\\studydrawer\\forms\\creationforms\\noteadditionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7D1A44F3-B45A-4D17-B30D-3AE803B828E5}|StudyDrawer\\StudyDrawer.csproj|solutionrelative:studydrawer\\forms\\creationforms\\noteadditionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D1A44F3-B45A-4D17-B30D-3AE803B828E5}|StudyDrawer\\StudyDrawer.csproj|c:\\users\\egor\\source\\repos\\studydrawer\\studydrawer\\forms\\creationforms\\notebookadditionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D1A44F3-B45A-4D17-B30D-3AE803B828E5}|StudyDrawer\\StudyDrawer.csproj|solutionrelative:studydrawer\\forms\\creationforms\\notebookadditionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +58,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 307,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,78 +70,150 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "DrawingImageForm.cs",
               "DocumentMoniker": "C:\\Users\\Egor\\source\\repos\\StudyDrawer\\StudyDrawer\\Forms\\ImageForms\\DrawingImageForm.cs",
               "RelativeDocumentMoniker": "StudyDrawer\\Forms\\ImageForms\\DrawingImageForm.cs",
               "ToolTip": "C:\\Users\\Egor\\source\\repos\\StudyDrawer\\StudyDrawer\\Forms\\ImageForms\\DrawingImageForm.cs",
               "RelativeToolTip": "StudyDrawer\\Forms\\ImageForms\\DrawingImageForm.cs",
-              "ViewState": "AgIAAKcBAAAAAAAAAAAlwKEBAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAADcAAAAAAAAAAAAAADwAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-02T17:18:28.278Z",
+              "WhenOpened": "2024-11-06T10:14:36.706Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "EditImageForm.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\Egor\\source\\repos\\StudyDrawer\\StudyDrawer\\Forms\\ImageForms\\EditImageForm.Designer.cs",
-              "RelativeDocumentMoniker": "StudyDrawer\\Forms\\ImageForms\\EditImageForm.Designer.cs",
-              "ToolTip": "C:\\Users\\Egor\\source\\repos\\StudyDrawer\\StudyDrawer\\Forms\\ImageForms\\EditImageForm.Designer.cs",
-              "RelativeToolTip": "StudyDrawer\\Forms\\ImageForms\\EditImageForm.Designer.cs",
-              "ViewState": "AgIAAOQAAAAAAAAAAAAawN0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-02T17:06:46.62Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "EditImageForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
-              "DocumentMoniker": "C:\\Users\\Egor\\source\\repos\\StudyDrawer\\StudyDrawer\\Forms\\ImageForms\\EditImageForm.cs",
-              "RelativeDocumentMoniker": "StudyDrawer\\Forms\\ImageForms\\EditImageForm.cs",
-              "ToolTip": "C:\\Users\\Egor\\source\\repos\\StudyDrawer\\StudyDrawer\\Forms\\ImageForms\\EditImageForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
-              "RelativeToolTip": "StudyDrawer\\Forms\\ImageForms\\EditImageForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-02T17:05:59.56Z",
-              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "EditImageForm.cs",
-              "DocumentMoniker": "C:\\Users\\Egor\\source\\repos\\StudyDrawer\\StudyDrawer\\Forms\\ImageForms\\EditImageForm.cs",
-              "RelativeDocumentMoniker": "StudyDrawer\\Forms\\ImageForms\\EditImageForm.cs",
-              "ToolTip": "C:\\Users\\Egor\\source\\repos\\StudyDrawer\\StudyDrawer\\Forms\\ImageForms\\EditImageForm.cs",
-              "RelativeToolTip": "StudyDrawer\\Forms\\ImageForms\\EditImageForm.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIsAAABOAAAAAAAAAA==",
+              "Title": "DrawingImageForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "DocumentMoniker": "C:\\Users\\Egor\\source\\repos\\StudyDrawer\\StudyDrawer\\Forms\\ImageForms\\DrawingImageForm.cs",
+              "RelativeDocumentMoniker": "StudyDrawer\\Forms\\ImageForms\\DrawingImageForm.cs",
+              "ToolTip": "C:\\Users\\Egor\\source\\repos\\StudyDrawer\\StudyDrawer\\Forms\\ImageForms\\DrawingImageForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "RelativeToolTip": "StudyDrawer\\Forms\\ImageForms\\DrawingImageForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-02T16:59:01.163Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-06T10:14:06.743Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MainForm.cs",
-              "DocumentMoniker": "C:\\Users\\Egor\\source\\repos\\StudyDrawer\\StudyDrawer\\Forms\\MainForm\\MainForm.cs",
-              "RelativeDocumentMoniker": "StudyDrawer\\Forms\\MainForm\\MainForm.cs",
-              "ToolTip": "C:\\Users\\Egor\\source\\repos\\StudyDrawer\\StudyDrawer\\Forms\\MainForm\\MainForm.cs",
-              "RelativeToolTip": "StudyDrawer\\Forms\\MainForm\\MainForm.cs",
-              "ViewState": "AgIAAKwAAAAAAAAAAAAQwKEAAAAJAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "NotebookSerializer.cs",
+              "DocumentMoniker": "C:\\Users\\Egor\\source\\repos\\StudyDrawer\\StudyDrawer\\DomainCode\\Util\\NotebookSerializer.cs",
+              "RelativeDocumentMoniker": "StudyDrawer\\DomainCode\\Util\\NotebookSerializer.cs",
+              "ToolTip": "C:\\Users\\Egor\\source\\repos\\StudyDrawer\\StudyDrawer\\DomainCode\\Util\\NotebookSerializer.cs",
+              "RelativeToolTip": "StudyDrawer\\DomainCode\\Util\\NotebookSerializer.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAIwCcAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-02T16:58:29.508Z",
+              "WhenOpened": "2024-11-06T08:06:05.102Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "ActualTasks.txt",
+              "DocumentMoniker": "C:\\Users\\Egor\\source\\repos\\StudyDrawer\\StudyDrawer\\ActualTasks.txt",
+              "RelativeDocumentMoniker": "StudyDrawer\\ActualTasks.txt",
+              "ToolTip": "C:\\Users\\Egor\\source\\repos\\StudyDrawer\\StudyDrawer\\ActualTasks.txt",
+              "RelativeToolTip": "StudyDrawer\\ActualTasks.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-11-06T08:03:17.364Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Note.cs",
+              "DocumentMoniker": "C:\\Users\\Egor\\source\\repos\\StudyDrawer\\StudyDrawer\\DomainCode\\Notes\\Note.cs",
+              "RelativeDocumentMoniker": "StudyDrawer\\DomainCode\\Notes\\Note.cs",
+              "ToolTip": "C:\\Users\\Egor\\source\\repos\\StudyDrawer\\StudyDrawer\\DomainCode\\Notes\\Note.cs",
+              "RelativeToolTip": "StudyDrawer\\DomainCode\\Notes\\Note.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T13:04:32.998Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainForm.cs",
+              "DocumentMoniker": "C:\\Users\\Egor\\source\\repos\\StudyDrawer\\StudyDrawer\\Forms\\MainForm\\MainForm.cs",
+              "RelativeDocumentMoniker": "StudyDrawer\\Forms\\MainForm\\MainForm.cs",
+              "ToolTip": "C:\\Users\\Egor\\source\\repos\\StudyDrawer\\StudyDrawer\\Forms\\MainForm\\MainForm.cs",
+              "RelativeToolTip": "StudyDrawer\\Forms\\MainForm\\MainForm.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAD4vxcAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T12:38:36.222Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ListObserver.cs",
+              "DocumentMoniker": "C:\\Users\\Egor\\source\\repos\\StudyDrawer\\StudyDrawer\\DomainCode\\Util\\ListObserver.cs",
+              "RelativeDocumentMoniker": "StudyDrawer\\DomainCode\\Util\\ListObserver.cs",
+              "ToolTip": "C:\\Users\\Egor\\source\\repos\\StudyDrawer\\StudyDrawer\\DomainCode\\Util\\ListObserver.cs",
+              "RelativeToolTip": "StudyDrawer\\DomainCode\\Util\\ListObserver.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T13:10:00.898Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "MainForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "DocumentMoniker": "C:\\Users\\Egor\\source\\repos\\StudyDrawer\\StudyDrawer\\Forms\\MainForm\\MainForm.cs",
               "RelativeDocumentMoniker": "StudyDrawer\\Forms\\MainForm\\MainForm.cs",
               "ToolTip": "C:\\Users\\Egor\\source\\repos\\StudyDrawer\\StudyDrawer\\Forms\\MainForm\\MainForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "RelativeToolTip": "StudyDrawer\\Forms\\MainForm\\MainForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-02T16:58:27.286Z"
+              "WhenOpened": "2024-11-04T12:38:24.839Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Notebook.cs",
+              "DocumentMoniker": "C:\\Users\\Egor\\source\\repos\\StudyDrawer\\StudyDrawer\\DomainCode\\Notes\\Notebook.cs",
+              "RelativeDocumentMoniker": "StudyDrawer\\DomainCode\\Notes\\Notebook.cs",
+              "ToolTip": "C:\\Users\\Egor\\source\\repos\\StudyDrawer\\StudyDrawer\\DomainCode\\Notes\\Notebook.cs",
+              "RelativeToolTip": "StudyDrawer\\DomainCode\\Notes\\Notebook.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T08:07:36.727Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "NoteAdditionForm.cs",
+              "DocumentMoniker": "C:\\Users\\Egor\\source\\repos\\StudyDrawer\\StudyDrawer\\Forms\\CreationForms\\NoteAdditionForm.cs",
+              "RelativeDocumentMoniker": "StudyDrawer\\Forms\\CreationForms\\NoteAdditionForm.cs",
+              "ToolTip": "C:\\Users\\Egor\\source\\repos\\StudyDrawer\\StudyDrawer\\Forms\\CreationForms\\NoteAdditionForm.cs",
+              "RelativeToolTip": "StudyDrawer\\Forms\\CreationForms\\NoteAdditionForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T12:54:08.465Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "NoteAdditionForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "DocumentMoniker": "C:\\Users\\Egor\\source\\repos\\StudyDrawer\\StudyDrawer\\Forms\\CreationForms\\NoteAdditionForm.cs",
+              "RelativeDocumentMoniker": "StudyDrawer\\Forms\\CreationForms\\NoteAdditionForm.cs",
+              "ToolTip": "C:\\Users\\Egor\\source\\repos\\StudyDrawer\\StudyDrawer\\Forms\\CreationForms\\NoteAdditionForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "RelativeToolTip": "StudyDrawer\\Forms\\CreationForms\\NoteAdditionForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T12:50:05.774Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "NotebookAdditionForm.cs",
+              "DocumentMoniker": "C:\\Users\\Egor\\source\\repos\\StudyDrawer\\StudyDrawer\\Forms\\CreationForms\\NotebookAdditionForm.cs",
+              "RelativeDocumentMoniker": "StudyDrawer\\Forms\\CreationForms\\NotebookAdditionForm.cs",
+              "ToolTip": "C:\\Users\\Egor\\source\\repos\\StudyDrawer\\StudyDrawer\\Forms\\CreationForms\\NotebookAdditionForm.cs",
+              "RelativeToolTip": "StudyDrawer\\Forms\\CreationForms\\NotebookAdditionForm.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAIBJwAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T12:45:50.173Z"
             }
           ]
         }

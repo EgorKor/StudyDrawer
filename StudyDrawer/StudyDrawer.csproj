@@ -13,6 +13,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="MessagePack" Version="2.5.187" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Update="Forms\ImageForms\EditImageForm.cs">
       <SubType>Form</SubType>
     </Compile>

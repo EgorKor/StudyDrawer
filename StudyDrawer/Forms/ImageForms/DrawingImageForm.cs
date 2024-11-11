@@ -42,8 +42,6 @@ namespace StudyDrawer.Forms
         {
             InitializeComponent();
             WindowState = FormWindowState.Maximized;
-
-
             _currentEditCursor = Cursors.Cross;
             _pen = new Pen(Color.Black, 5.0f);
             _flushCursor = new Cursor(@"../../../Resources/Eraser.cur");
@@ -57,8 +55,8 @@ namespace StudyDrawer.Forms
 
         private void EditImageForm_Load(object sender, EventArgs e)
         {
-            MinimumSize = new Size(Size.Width, Size.Height);
-            MaximumSize = new Size(Size.Width, Size.Height);
+            MinimumSize = Size;
+            MaximumSize = Size;
             _imageIndex = 0;
             _images = new List<Image>();
             _imageHeight = EditPictureBox.Height;

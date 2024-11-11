@@ -28,36 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
-            TreeNode treeNode1 = new TreeNode("Узел3");
-            TreeNode treeNode2 = new TreeNode("блокнот 1", new TreeNode[] { treeNode1 });
-            TreeNode treeNode3 = new TreeNode("Узел1");
-            TreeNode treeNode4 = new TreeNode("Узел2");
             NotebookTreeView = new TreeView();
             AddNotebookButton = new Button();
             ContentLayoutPanel = new FlowLayoutPanel();
             OpenFileDialog = new OpenFileDialog();
+            NoteAddButton = new Button();
             SuspendLayout();
             // 
             // NotebookTreeView
             // 
-            NotebookTreeView.Location = new Point(12, 76);
+            NotebookTreeView.Location = new Point(14, 157);
             NotebookTreeView.Margin = new Padding(3, 2, 3, 2);
             NotebookTreeView.Name = "NotebookTreeView";
-            treeNode1.Name = "Узел3";
-            treeNode1.Text = "Узел3";
-            treeNode2.Name = "note0";
-            treeNode2.Text = "блокнот 1";
-            treeNode3.Name = "Узел1";
-            treeNode3.Text = "Узел1";
-            treeNode4.Name = "Узел2";
-            treeNode4.Text = "Узел2";
-            NotebookTreeView.Nodes.AddRange(new TreeNode[] { treeNode2, treeNode3, treeNode4 });
             NotebookTreeView.Size = new Size(170, 266);
             NotebookTreeView.TabIndex = 2;
+            NotebookTreeView.NodeMouseClick += NotebookTreeView_NodeMouseClick;
+            NotebookTreeView.NodeMouseDoubleClick += NotebookTreeView_NodeMouseDoubleClick;
             // 
             // AddNotebookButton
             // 
-            AddNotebookButton.Location = new Point(10, 36);
+            AddNotebookButton.Location = new Point(12, 76);
             AddNotebookButton.Name = "AddNotebookButton";
             AddNotebookButton.Size = new Size(172, 35);
             AddNotebookButton.TabIndex = 3;
@@ -80,11 +70,22 @@
             OpenFileDialog.FileName = "openFileDialog1";
             OpenFileDialog.Filter = "\"Изоборажения|\"";
             // 
+            // NoteAddButton
+            // 
+            NoteAddButton.Location = new Point(12, 117);
+            NoteAddButton.Name = "NoteAddButton";
+            NoteAddButton.Size = new Size(172, 35);
+            NoteAddButton.TabIndex = 5;
+            NoteAddButton.Text = "Добавить заметку";
+            NoteAddButton.UseVisualStyleBackColor = true;
+            NoteAddButton.Click += NoteAddButton_Click;
+            // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1194, 592);
+            Controls.Add(NoteAddButton);
             Controls.Add(ContentLayoutPanel);
             Controls.Add(AddNotebookButton);
             Controls.Add(NotebookTreeView);
@@ -100,5 +101,6 @@
         private Button AddNotebookButton;
         private FlowLayoutPanel ContentLayoutPanel;
         private OpenFileDialog OpenFileDialog;
+        private Button NoteAddButton;
     }
 }

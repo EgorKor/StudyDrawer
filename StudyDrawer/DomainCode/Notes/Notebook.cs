@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace StudyDrawer.DomainCode.Notes
 {
+    [Serializable]
     public class Notebook
     {
         public string Name { get; set; }
@@ -14,4 +15,5 @@ namespace StudyDrawer.DomainCode.Notes
         public DateTime UpdatedAt { get; set; }
         public List<Note> Notes { get; set; }
     }
+
 }
