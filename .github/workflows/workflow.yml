@@ -9,3 +9,5 @@ jobs:
     steps:
       - name: Display Some Text
         run: echo "some text"
+      - name: Display Some New text
+        run: echo "some new text"
