@@ -11,3 +11,7 @@ jobs:
         run: echo "some text"
       - name: Display Some New text
         run: echo "some new text"
+      - name: Some Long command
+        run: |
+          node -v
+          npm -v
