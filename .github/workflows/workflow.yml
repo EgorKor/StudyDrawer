@@ -1,7 +1,7 @@
 name: first work flow
 
 on:
-  - push
+  - workflow_dispatch
 
 jobs:
   run-first-command:
@@ -15,3 +15,13 @@ jobs:
         run: |
           node -v
           npm -v
+  run-second-command:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Display Some Text Parallel
+        run: echo "text paralel"
+  run-waiting-command:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Wait For Two Jobs To End
+        run: echo "joined"
