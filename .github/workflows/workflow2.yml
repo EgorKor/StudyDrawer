@@ -6,15 +6,15 @@ on:
     types: [completed]
   
 jobs:
-  check-result-if-success:
-    if: {{github.event.workflow_run.conclusion}} == 'success'
+  check-result-if-success-command:
+    if: ${{github.event.workflow_run.conclusion == 'success'}} 
     runs-on: ubuntu-latest
     steps:
       - name: if-success
         run: |
           echo "success"
-  check-result-if-failure:
-    if: {{github.event.workflow_run.conclusion}} == 'failure'
+  check-result-if-failure-command:
+    if: ${{github.event.workflow_run.conclusion == 'failure'}} 
     runs-on: ubuntu
     steps:
       - name: if-failure
