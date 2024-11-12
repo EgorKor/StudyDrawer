@@ -1,7 +1,7 @@
 name: first work flow
 
 on:
-  - workflow_dispatch
+  - push
 
 jobs:
   run-first-command:
@@ -15,6 +15,11 @@ jobs:
         run: |
           node -v
           npm -v
+      - uses: actions/checkout@v4
+      - name: Display Repo Content
+        run: |
+          pwd
+          ls -a
   run-second-command:
     runs-on: ubuntu-latest
     steps:
