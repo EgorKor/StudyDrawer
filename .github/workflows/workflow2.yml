@@ -1,0 +1,24 @@
+name: workflow2
+
+on:
+  workflow_run:
+    workflows: [first_work_flow]
+    types: [completed]
+  
+jobs:
+  check-result-if-success:
+    if: {{github.event.workflow_run.conclusion}} == 'success'
+    runs-on: ubuntu-latest
+    steps:
+      - name: if-success
+        run: |
+          echo "success"
+  check-result-if-failure:
+    if: {{github.event.workflow_run.conclusion}} == 'failure'
+    runs-on: ubuntu
+    steps:
+      - name: if-failure
+        run:
+          echo "failure"  
+        
+    
